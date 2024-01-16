@@ -1,0 +1,17 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <!-- Include CSS styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Product Search</h1>
+    <form action="/search" method="POST">
+        <input type="text" name="user_input" placeholder="Enter your search...">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

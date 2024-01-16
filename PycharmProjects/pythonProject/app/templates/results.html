@@ -1,0 +1,79 @@
+<!-- results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Search Results</title>-->
+<!--    &lt;!&ndash; Include CSS styles &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">-->
+
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <div>
+        <!-- Display fetched data here -->
+        <table>
+            <thead>
+                <!-- Table headers based on the column names -->
+                {% for column in column_names %}
+                    <th>{{ column }}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                <!-- Iterate through each row of data -->
+                {% for row in data %}
+                    <tr>
+                        <!-- Display each value in the row -->
+                        {% for value in row %}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+
+    <div>-->
+        <!-- Display fetched data here -->
+        <table>
+            <thead>
+                <!-- Table headers based on the column names -->
+                {% for column in column_names %}
+                    <th>{{ column }}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                <!-- Iterate through each row of data -->
+                {% for row in data %}
+                    <tr>
+                        <!-- Display each value in the row -->
+                        {% for value in row %}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
